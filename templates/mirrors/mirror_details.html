@@ -47,6 +47,8 @@
             {% with mirror.urls.all as urls %}
             <td>{% if urls %}
                 {% for u in urls %}
+                {{ u.has_ipv4|yesno:"[IPv4]," }}
+                {{ u.has_ipv6|yesno:"[IPv6]," }}
                 <a href="{{ u.url }}">{{ u.url }}</a><br/>
                 {% endfor %}
                 {% else %}None{% endif %}

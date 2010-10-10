@@ -4,6 +4,8 @@
         <tr>
             <th>Mirror URL</th>
             <th>Protocol</th>
+            <th>IPv4</th>
+            <th>IPv6</th>
             <th>Country</th>
             <th>Last Sync</th>
             <th>Completion %</th>
@@ -18,6 +20,8 @@
         <tr class="{% cycle 'odd' 'even' %}">
             <td>{{ m_url.url }}</td>
             <td>{{ m_url.protocol }}</td>
+            <td>{{ m_url.has_ipv4|yesno:"Yes," }}</td>
+            <td>{{ m_url.has_ipv6|yesno:"Yes," }}</td>
             <td>{{ m_url.mirror.country }}</td>
             <td>{{ m_url.last_sync|date:'Y-m-d H:i'|default:'unknown' }}</td>
             <td>{{ m_url.completion_pct|percentage:1 }}</td>

@@ -103,11 +103,11 @@
 <script type="text/javascript">
 $(document).ready(function() {
     $("#outofsync_mirrors:has(tbody tr)").tablesorter(
-        {widgets: ['zebra'], sortList: [[3,1]],
-        headers: { 6: { sorter: 'mostlydigit' }, 7: { sorter: 'mostlydigit' }, 8: { sorter: 'mostlydigit' } } });
+        {widgets: ['zebra'], sortList: [[5,1]],
+        headers: { 8: { sorter: 'mostlydigit' }, 9: { sorter: 'mostlydigit' }, 10: { sorter: 'mostlydigit' } } });
     $("#successful_mirrors:has(tbody tr)").tablesorter(
-        {widgets: ['zebra'], sortList: [[8,0]],
-        headers: { 6: { sorter: 'mostlydigit' }, 7: { sorter: 'mostlydigit' }, 8: { sorter: 'mostlydigit' } } });
+        {widgets: ['zebra'], sortList: [[10,0]],
+        headers: { 8: { sorter: 'mostlydigit' }, 9: { sorter: 'mostlydigit' }, 10: { sorter: 'mostlydigit' } } });
     $("#errorlog_mirrors:has(tbody tr)").tablesorter(
         {widgets: ['zebra'], sortList: [[4,1], [5,1]]});
 });
